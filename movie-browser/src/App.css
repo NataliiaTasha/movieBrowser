@@ -1,0 +1,45 @@
+.app-container {
+  background-color: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* .home-screen, .discover-screen, .detail-screen {
+  padding: 20px;
+} */
+
+.movie-spotlight img, .trending-movie img, .movie-item img, .related-movie img {
+  max-width: 100dvw;
+  border-radius: 10px;
+}
+
+.trending-movies, .movie-list, .related-movies {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.bottom-nav {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  flex: 1;
+}
+
+.bottom-nav a.active {
+  color: #ff5722;
+}
+
+.orange {
+  color: #ff5722;
+}
+
