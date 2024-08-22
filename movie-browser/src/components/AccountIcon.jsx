@@ -33,7 +33,7 @@ const AccountIcon = ( {isActive} ) => {
 </filter>
 <linearGradient id="paint0_linear_735_5" x1="16.8095" y1="2.68334" x2="5.88808" y2="19.0653" gradientUnits="userSpaceOnUse">
 <stop offset="0.117914" stopColor="#FF8F71"/>
-<stop offset="1" stop-color="#EF2D1A"/>
+<stop offset="1" stopColor="#EF2D1A"/>
 </linearGradient>
 <linearGradient id="paint1_linear_735_5" x1="7.58959" y1="2.48892" x2="15.7421" y2="12.586" gradientUnits="userSpaceOnUse">
 <stop stopColor="white" stopOpacity="0.25"/>
@@ -44,7 +44,7 @@ const AccountIcon = ( {isActive} ) => {
 <stop offset="1" stopColor="#EF2D1A"/>
 </linearGradient>
 <linearGradient id="paint3_linear_735_5" x1="4.52498" y1="15.3871" x2="11.7502" y2="29.7542" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.25"/>
+<stop stopColor="white" stopOpacity="0.25"/>
 <stop offset="1" stopColor="white" stopOpacity="0"/>
 </linearGradient>
 </defs>
@@ -63,19 +63,19 @@ const AccountIcon = ( {isActive} ) => {
 </g>
 <defs>
 <filter id="filter0_b_82_226" x="-4.87343" y="-4.31789" width="31.8909" height="36.3197" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.43672"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_82_226"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_82_226" result="shape"/>
 </filter>
 <filter id="filter1_b_82_226" x="-0.318257" y="-4.31789" width="22.5271" height="22.5271" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.43672"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_82_226"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_82_226" result="shape"/>
 </filter>
 <filter id="filter2_b_82_226" x="-4.87343" y="8.46238" width="31.8909" height="23.5395" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feGaussianBlur in="BackgroundImageFix" stdDeviation="2.43672"/>
 <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_82_226"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_82_226" result="shape"/>

@@ -1,0 +1,16 @@
+.genre {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.genre p{
+    background-color: rgba(250, 240, 202, 0.05);
+    color: #bcbcbc;
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.25); 
+    padding: 10px;
+    /* border: 1px solid; */
+    /* border-color: -moz-linear-gradient(35deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)); */
+    border-radius: 15px;
+    margin-right: 10px;
+}

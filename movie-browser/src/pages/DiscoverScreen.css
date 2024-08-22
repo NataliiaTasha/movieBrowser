@@ -1,0 +1,26 @@
+.genre-item {
+    position: relative;
+    cursor: pointer;
+    padding-bottom: 4px;
+    color: inherit;
+    margin-right: 10px;
+}
+
+.genre-item.selected {
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.genre-item.selected::after {
+    content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+  height: 2.5px;
+  background: linear-gradient(45deg,#ef2d1a, #ff8f71);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}

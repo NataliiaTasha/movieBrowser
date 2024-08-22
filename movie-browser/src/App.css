@@ -1,7 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  min-height: 100dvh;
+}
+
 .app-container {
-  background-color: #141414;
+  background-color: #15141F;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: Lato;
+  letter-spacing: calc(0.2em);
+  font-weight: medium;
+  padding: 25px;
 }
 
 /* .home-screen, .discover-screen, .detail-screen {
@@ -9,17 +19,17 @@
 } */
 
 .movie-spotlight img, .trending-movie img, .movie-item img, .related-movie img {
-  max-width: 100dvw;
-  border-radius: 10px;
+ /* max-width: 100dvw; */
+  border-radius: 15px;
 }
 
 .trending-movies, .movie-list, .related-movies {
   display: flex;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 .bottom-nav {
-  background-color: #1f1f1f;
+  background-color: #15141F;
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
@@ -28,18 +38,10 @@
   width: 100%;
 }
 
-.bottom-nav a {
+a.movie-title {
   color: #fff;
-  text-align: center;
-  text-decoration: none;
-  flex: 1;
 }
 
-.bottom-nav a.active {
-  color: #ff5722;
+a.movie-title:hover {
+  color: #bcbcbc;
 }
-
-.orange {
-  color: #ff5722;
-}
-

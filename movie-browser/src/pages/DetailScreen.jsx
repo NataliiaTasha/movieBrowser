@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom'; 
+import { useParams, Link } from 'react-router-dom';
+import './DetailScreen.css';
 
 function DetailScreen() {
   const { id } = useParams();
@@ -9,7 +10,7 @@ function DetailScreen() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    
+
     const fetchMovieDetails = async () => {
       try {
         const apiKey = import.meta.env.VITE_API_KEY;
@@ -23,7 +24,7 @@ function DetailScreen() {
       } catch (error) {
         setError(error.message);
       }
-      
+
     };
 
     const fetchRelatedMovies = async () => {
@@ -35,7 +36,7 @@ function DetailScreen() {
         }
         const data = await response.json();
         setRelatedMovies(data.results);
-        
+
       } catch (error) {
         setError(error.message);
       }
@@ -62,24 +63,26 @@ function DetailScreen() {
             <p>{new Date(movieDetails.release_date).toLocaleDateString()}</p>
 
             <h4>Genre</h4>
-            <p>{movieDetails.genres.map(genre => genre.name).join(', ')}</p>
+            <div className='genre'>{movieDetails.genres.map(genre => (
+              <p>{genre.name}</p>
+            ))}</div>
 
             <h4>Synopsis</h4>
-            <p>{movieDetails.overview}</p> 
+            <p>{movieDetails.overview}</p>
           </div>
           <div className='related-movies'>
-          <h4>Related Movies</h4>
-          <div className='related-movies-list'>
-            {relatedMovies.map(movie => (
-              <div className='related-movie' key={movie.id}>
-                <Link to={`/detail/${movie.id}`}>
-              <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title} />
-              </Link>
-              
-              <Link to={`/detail/${movie.id}`} className="related-movie-title">{movie.title}</Link>
-              </div>
-            ))}
-          </div>
+            <h4>Related Movies</h4>
+            <div className='related-movies-list'>
+              {relatedMovies.map(movie => (
+                <div className='related-movie' key={movie.id}>
+                  <Link to={`/detail/${movie.id}`}>
+                    <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title} />
+                  </Link>
+
+                  <Link to={`/detail/${movie.id}`} className="related-movie-title">{movie.title}</Link>
+                </div>
+              ))}
+            </div>
           </div>
         </>
       )}
