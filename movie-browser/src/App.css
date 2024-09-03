@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body {
-  min-height: 100dvh;
-}
 
 .app-container {
   background-color: #15141F;
@@ -12,6 +9,8 @@ body {
   letter-spacing: calc(0.2em);
   font-weight: medium;
   padding: 25px;
+  min-height: 100dvh;
+  min-width: 100dvw;
 }
 
 /* .home-screen, .discover-screen, .detail-screen {

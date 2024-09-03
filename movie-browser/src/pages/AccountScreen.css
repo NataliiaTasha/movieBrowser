@@ -1,0 +1,50 @@
+/* src/pages/AccountScreen.css */
+.account-screen {
+    padding: 20px;
+    background-color: #15141F;
+    color: #fff;
+}
+
+.account-info, .account-settings {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: transparent;
+      background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+      -webkit-background-clip: text;
+      background-clip: text;
+}
+
+p {
+    font-size: 1rem;
+    color: #bcbcbc;
+}
+
+
+.account-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .auth-buttons button:hover {
+    border: 1px solid #ff8f71;
+  }
