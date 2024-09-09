@@ -24,3 +24,23 @@
   border-radius: 2px;
   transition: transform 0.3s ease;
 }
+
+.discover-movie-title {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

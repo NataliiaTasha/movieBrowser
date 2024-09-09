@@ -70,7 +70,9 @@ function DiscoverScreen() {
           <div className="movie-item" key={movie.id}>
             <Link to={`/detail/${movie.id}`}>
             <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
-            <div className="movie-title">{movie.title} {new Date(movie.release_date).getFullYear()}</div>
+            </Link>
+            <Link to={`/detail/${movie.id}`}>
+            <div className="discover-movie-title">{movie.title} {new Date(movie.release_date).getFullYear()}</div>
             </Link>
           </div>
         ))}
