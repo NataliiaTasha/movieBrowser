@@ -1,25 +1,22 @@
-import React, { useState } from 'react'; 
+import React, { useState } from "react";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebaseConfig"; // Підключаємо Firebase
 import './Login.css';
 
 function Login({ closeLogin }) {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-   
-    const registeredUser = JSON.parse(localStorage.getItem('registeredUser'));
-
-    if (registeredUser) {
-      if (registeredUser.email === email && registeredUser.password === password) {
-        console.log('Login successful');
-        closeLogin();  
-        setError('Invalid email or password');
-      }
-    } else {
-      setError('No user found. Please sign up.');
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      console.log("Login successful!");
+      closeLogin();
+    } catch (error) {
+      console.error("Error:", error.message);
+      setError(error.message); // Відображаємо помилку
     }
   };
 
@@ -42,12 +39,13 @@ function Login({ closeLogin }) {
           required
         />
         <button type="submit">Login</button>
-        {error && <p style={{ color: 'red' }}>{error}</p>}
+        {error && <p style={{ color: "red" }}>{error}</p>}
       </form>
     </div>
   );
 }
 
 export default Login;
+
 
 
