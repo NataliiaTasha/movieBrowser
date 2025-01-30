@@ -8,9 +8,12 @@
   font-family: Lato;
   letter-spacing: calc(0.2em);
   font-weight: medium;
-  padding: 25px;
-  min-height: 100dvh;
-  min-width: 100dvw;
+  padding: 1vh;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  margin: 0 auto;
 }
 
 /* .home-screen, .discover-screen, .detail-screen {
@@ -24,7 +27,8 @@
 
 .trending-movies, .movie-list, .related-movies {
   display: flex;
-  /* overflow-x: scroll; */
+  flex-wrap: wrap;
+  margin: 1vh auto;
 }
 
 .bottom-nav {
@@ -44,3 +48,8 @@ a.movie-title {
 a.movie-title:hover {
   color: #bcbcbc;
 }
+
+.trending-section {
+  margin-bottom: 2vh;
+  max-width: 100vw;
+ }

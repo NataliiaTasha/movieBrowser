@@ -72,6 +72,7 @@ function DiscoverScreen() {
             <img src={`https://image.tmdb.org/t/p/w200${movie.poster_path}`} alt={movie.title} />
             <div className="movie-title">{movie.title} {new Date(movie.release_date).getFullYear()}</div>
             </Link>
+            
           </div>
         ))}
       </div>

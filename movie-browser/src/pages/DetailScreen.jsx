@@ -48,9 +48,11 @@ function DetailScreen() {
 
   return (
     <div className="detail-screen">
+      
       {movieDetails && (
         <>
-          <div className="movie-header">
+        <div className="movie">
+        <div className="movie-header">
             <img src={`https://image.tmdb.org/t/p/w500${movieDetails.backdrop_path}`} alt={movieDetails.title} />
             <div className="movie-info">
               <h2>{movieDetails.title}</h2>
@@ -66,7 +68,8 @@ function DetailScreen() {
             <div className='genre'>{movieDetails.genres.map(genre => (
               <p>{genre.name}</p>
             ))}</div>
-
+        </div>
+         
             <h4>Synopsis</h4>
             <p>{movieDetails.overview}</p>
           </div>
@@ -79,7 +82,7 @@ function DetailScreen() {
                     <img src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`} alt={movie.title} />
                   </Link>
 
-                  <Link to={`/detail/${movie.id}`} className="related-movie-title">{movie.title}</Link>
+                  <Link to={`/detail/${movie.id}`} className="movie-title">{movie.title}</Link>
                 </div>
               ))}
             </div>

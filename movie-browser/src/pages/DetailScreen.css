@@ -14,3 +14,66 @@
     border-radius: 15px;
     margin-right: 10px;
 }
+.related-movies-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: space-between; */
+    flex-wrap: wrap;
+    margin: 1vh 2vw;
+    width: 100vw;
+}
+
+.related-movie {
+    position: relative;
+margin-top: 1vh;
+    width: 31vw;
+    height: auto;
+
+}
+
+.related-movie img {
+    width: 31vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+.movie-title {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-header img {
+    width: 30vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+.detail-screen {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    padding: 0 1vh;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1vh 0;
+}

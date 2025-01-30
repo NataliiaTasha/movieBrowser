@@ -1,9 +1,9 @@
 .genre-item {
     position: relative;
     cursor: pointer;
-    padding-bottom: 4px;
+    padding-bottom: 1vh;
     color: inherit;
-    margin-right: 10px;
+    margin-right: 1vh;
 }
 
 .genre-item.selected {
@@ -23,4 +23,50 @@
   background: linear-gradient(45deg,#ef2d1a, #ff8f71);
   border-radius: 2px;
   transition: transform 0.3s ease;
+}
+
+.movie-title {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-item {
+    position: relative;
+    padding: 1vh;
+}
+
+.discover-screen {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+  
+}
+
+.categories {
+    padding: 0 1vh;
+}
+
+.search-bar {
+    padding: 1vh;
 }
