@@ -26,6 +26,7 @@ function HomeScreen() {
 
     fetchTrendingMovies();
   }, []);
+  
 
   return (
     <div className="home-screen">
@@ -36,6 +37,7 @@ function HomeScreen() {
       <div className="movie-spotlight">
         <h2>Movie Spotlight</h2>
         {trendingMovies.length > 0 && (
+          <Link to={`/detail/${trendingMovies[0].id}`}>
           <div className="spotlight-movie">
             <img src={`https://image.tmdb.org/t/p/w500${trendingMovies[0].backdrop_path}`} alt={trendingMovies[0].title} />
             <div className="spotlight-title">
@@ -46,6 +48,7 @@ function HomeScreen() {
               </div>
             </div>
           </div>
+          </Link>
         )}
       </div>
 

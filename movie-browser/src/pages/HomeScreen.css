@@ -14,6 +14,7 @@ h1 {
 .home-screen {
     background-color: #15141F;
     height: auto;
+    padding-bottom: 5vh;
 }
 
 .spotlight-movie {
@@ -28,11 +29,15 @@ h1 {
     display: flex;
     align-items: center;
     background-color: rgba(225, 225, 225, 0.3);
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(3px);
     width: auto;
     border-radius: 15px;
     padding: 10px 20px;
-    color: white;
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
     margin-left: 15px;
 }
 
@@ -79,11 +84,11 @@ h1 {
     transform: scale(1.05);
 } */
 
-.movie-title {
+a.movie-title {
     text-align: center;
     text-wrap: nowrap;
     font-size: 1rem;
-    color: white;
+    color: #15141F;
     text-decoration: none;
     position: absolute;
     bottom: 25px;

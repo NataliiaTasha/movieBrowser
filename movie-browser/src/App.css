@@ -8,12 +8,13 @@
   font-family: Lato;
   letter-spacing: calc(0.2em);
   font-weight: medium;
-  padding: 1vh;
+  padding: 4.5vh;
   min-height: 100vh;
   width: 100vw;
   max-width: 100vw;
   min-width: 100vw;
   margin: 0 auto;
+  align-self: center;
 }
 
 /* .home-screen, .discover-screen, .detail-screen {
@@ -41,15 +42,22 @@
   width: 100%;
 }
 
-a.movie-title {
+/* a.movie-title {
   color: #fff;
-}
+} */
 
 a.movie-title:hover {
   color: #bcbcbc;
+  background-color: rgba(250, 240, 202, 0.25);
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.5); 
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .trending-section {
   margin-bottom: 2vh;
   max-width: 100vw;
  }
+

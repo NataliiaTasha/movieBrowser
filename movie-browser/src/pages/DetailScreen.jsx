@@ -65,9 +65,17 @@ function DetailScreen() {
             <p>{new Date(movieDetails.release_date).toLocaleDateString()}</p>
 
             <h4>Genre</h4>
-            <div className='genre'>{movieDetails.genres.map(genre => (
-              <p>{genre.name}</p>
-            ))}</div>
+            <div className='genre'>
+    {movieDetails.genres.map(genre => (
+      <Link 
+        key={genre.id} 
+        to={`/discover?genre=${genre.id}`} 
+        className="genre-link"
+      >
+        {genre.name}
+      </Link>
+    ))}
+  </div>
         </div>
          
             <h4>Synopsis</h4>

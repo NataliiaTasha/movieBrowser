@@ -28,8 +28,8 @@
 .movie-title {
     text-align: center;
     text-wrap: nowrap;
-    font-size: 1rem;
-    color: white;
+    font-size: 1rem;    
+    font-weight: 600;
     text-decoration: none;
     position: absolute;
     bottom: 25px;
@@ -43,6 +43,18 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #15141F;
+}
+
+.movie-title:hover {
+    /* color: #bcbcbc; */
+    background-color: rgba(225, 225, 225, 0.25);
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.5);
+    font-weight: 800;
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .movie-item {
@@ -53,14 +65,15 @@
 .discover-screen {
     display: flex;
     flex-direction: column;
-    max-height: none;
+    /* max-height: none; */
+    padding-bottom: 7vh;
+
 }
 
 .movie-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1vh;
-  
+    /* margin-bottom: 1vh;   */
 }
 
 .categories {
@@ -70,3 +83,29 @@
 .search-bar {
     padding: 1vh;
 }
+
+.more-button {
+    text-align: center;
+    font-size: 1rem;    
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 1.5vh;
+    border-radius: 15px;
+    width: auto;
+    color: #15141F;
+    margin: 1vh auto;
+    cursor: pointer;
+    border: none;
+}
+
+.more-button:hover {
+    background-color: rgba(225, 225, 225, 0.25);
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.5);
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
