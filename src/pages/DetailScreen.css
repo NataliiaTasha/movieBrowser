@@ -1,0 +1,109 @@
+.genre {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+.genre-link {
+    background-color: rgba(250, 240, 202, 0.05);
+    color: #bcbcbc;
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    /* border: 1px solid; */
+    /* border-color: -moz-linear-gradient(35deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0)); */
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.genre-link:hover {
+    color: white;
+    background-color: rgba(250, 240, 202, 0.25);
+    box-shadow: -1px -1px 0.5px rgba(255, 255, 255, 0.5);
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(35deg, #ef2d1a, #ff8f71);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.related-movies-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 1vh 2vw; */
+    width: 94vw;
+}
+
+.related-movie {
+    position: relative;
+    margin-top: 2vh;
+    width: 30vw;
+    height: auto;
+
+}
+
+.related-movie img {
+    width: 30vw;
+    height: auto;
+    border-radius: 15px;
+}
+
+.movie-title {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 1rem;
+    color: #15141F;
+    text-decoration: none;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(225, 225, 225, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;    
+}
+
+.movie-header img {
+    width: 45vw;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 2vw;
+}
+
+.detail-screen {
+    display: flex;
+    flex-direction: column;
+    max-height: none;
+    /* padding: 0 1vh; */
+    width: 90vw;
+    
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 1vh 0;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1vh 0;
+    width: 94vw;
+}
