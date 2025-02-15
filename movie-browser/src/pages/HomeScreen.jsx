@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import PlayIcon from '../components/PlayIcon';
+import star from '../assets/img/star.svg';
 import './HomeScreen.css';
 
 function HomeScreen() {
@@ -60,7 +61,8 @@ function HomeScreen() {
               <div className='movie-vote'>
               <p>IMDb</p>
                 <div className="vote-container">
-                <img src="../src/assets/img/star.svg" alt="star" />
+                {/* <img src="/assets/img/star.svg" alt="star" /> */}
+                <img src={star} alt="star" />
                 <p>{movie.vote_average}</p>
                 </div>
                 </div>
